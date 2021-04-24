@@ -1,0 +1,28 @@
+title Get SPA NOTES PAGE- BY SAMROOD ALI
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa
+server-->browser: HTML-code SPA document
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+server-->browser: main.css
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa.js
+server-->browser: spa.js
+
+note over browser:
+browser starts executing js-code:
+1 ) Creates a new AJAX (XHR) Request
+2 ) Attaches event handler for Successful AJAX request to redraw notes
+
+end note
+
+browser->server: HTTP GET (AJAX XHR) https://studies.cs.helsinki.fi/exampleapp/data.json
+server->browser: Notes data in JSON format as response
+note over browser:
+The succesful trigger calls the callback to redraw notes on the new notes data.
+The notes are rendered onscreen.
+end note
+
+note over browser:
+1 ) Browser continues executing javascrit
+2 ) Saves code for new notes to window on form submission
+3 ) It is executed on window load
+4 ) Which will add event listener to form onSubmit for new notes.
+end note
