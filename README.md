@@ -18,7 +18,9 @@ Create a diagram depicting the situation where the user creates a new note using
 
 This was the last exercise, and it's time to push your answers to GitHub and mark the exercises as done in the submission application.
 
-👤 **Author**
 
-- GitHub: [@SamroodAli](https://github.com/SamroodAli)
-- LinkedIn: [Samrood Ali](https://www.linkedin.com/in/samrood-ali/)
+👤 **Samrood Ali**
+- GitHub: [@githubhandle](https://github.com/SamroodAli)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/samrood-ali/)
+
+![Samrood Ali's GitHub stats](https://github-readme-stats.vercel.app/api?username=SamroodAli&count_private=true&theme=dark&show_icons=true)
