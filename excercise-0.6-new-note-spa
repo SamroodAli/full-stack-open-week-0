@@ -1,0 +1,25 @@
+title NEW SPA NOTE- BY SAMROOD ALI
+Browser
+
+note over browser:
+browser has previously executed code:
+1) When window loads, the forms default behaviour is prevented.
+2) Creates a note variable with content from the input field as well date info now.
+3) Pushes notes to existing notes
+4) Clears the input field assigning empty string.
+5) Calls redraw notes function that creates notes on page using ul and li tags including new note
+6) Invoke the sendToSever function
+end note
+note over browser:
+sendToServer Function
+1 ) It takes in new note data.
+2 ) It creates a new AJAX (XHR) Request
+3 ) The ajax method is post in json Stringified json format
+end note
+
+browser->server: HTTP POST (AJAX) https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+
+note over browser:
+The ajax request contains the new notes data.
+There is no following get request,and no reloading of the page.
+end note
