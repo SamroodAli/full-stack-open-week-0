@@ -1,0 +1,29 @@
+title New Note Sequence Diagram From Samrood Ali
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note
+note over browser:
+the Post request contains note:'note content' as form data
+end note
+server->browser: Browser sends response with status code 304 for redirect to https://studies.cs.helsinki.fi/exampleapp/notes
+note over browser
+browser repeats the cycle of presenting the notes
+end note over
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
+server-->browser: HTML-code
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+server-->browser: main.css
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.js
+server-->browser: main.js
+
+note over browser:
+browser starts executing js-code
+that requests JSON data from server 
+which will contain the new note that we posted.
+end note
+
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+server-->browser: [{ content: "note content", date: "2019-05-23" }, ...]
+
+note over browser:
+browser executes the event handler
+that renders notes to display including the new note.
+end note
